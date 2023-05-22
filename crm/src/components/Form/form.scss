@@ -1,0 +1,301 @@
+@mixin inputText(){
+    font-family: 'Century Gothic-l';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #ABA3A3;
+}
+
+
+.form {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+
+    &__inputs {
+        max-width: 438px;
+        padding: 30px 42px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin: -83px auto;
+        background-color: #fff;
+        border-radius: 28px;
+        filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.42));
+
+    }
+
+    &_btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+
+        button {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 20px;
+            /* identical to box height */
+
+
+            color: #899095;
+            background: #fff;
+            border: none;
+        }
+    }
+
+    &__top {
+        height: 33vh;
+        background: url("../../images/back/water-drops-blue-background-E8MJVLS\ 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 11px;
+
+    }
+
+    input~button {
+        width: 34px;
+        height: 34px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        background-color: transparent;
+        right: 22px;
+        top: 10px;
+        border: none;
+        background-image: url("../../images/icons/eye.png");
+    }
+
+    input~i {
+        width: 24px;
+        height: 24px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    input[name="email"]~i {
+
+        background: url("../../images/icons/mail.png");
+
+    }
+
+    input[name="fullName"]~i {
+
+        background: url("../../images/icons/user.png");
+
+    }
+
+    input[name="password"]~i,
+    input[name="confirm"]~i {
+
+        background: url("../../images/icons/lock.png");
+
+    }
+
+
+    input {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        min-width: 340px;
+        max-width: 350px;
+        height: 45px;
+        border: none;
+        padding: 0 53px;
+        padding-right: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+
+        &:focus {
+            outline: none;
+        }
+
+
+
+    }
+
+    input[type="checkbox"] {
+        width: 22px;
+        min-width: unset;
+        height: 21px;
+        padding: 0;
+        margin: 0;
+    }
+
+    input:-internal-autofill-selected {
+        background-color: transparent !important;
+        appearance: unset;
+        color: transparent !important;
+        background-image: url("../../images/icons/mail.png") !important;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        &_input {
+            min-width: 360px;
+            max-width: fit-content;
+            position: relative;
+
+            i {
+                position: absolute;
+                z-index: 2;
+                top: 12px;
+                left: 17px;
+            }
+        }
+    }
+
+    .check {
+        width: 93%;
+        height: 21px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 5% 35% 60%;
+        justify-content: space-between;
+
+
+
+        a {
+
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #0386D0;
+            text-align: right;
+            text-decoration: none;
+
+        }
+
+    }
+
+    span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #6B5E5E;
+        text-align: left;
+        padding-left: 8px;
+
+    }
+
+    button.login {
+        width: 93%;
+        height: 45px;
+        background: #15ADB7;
+        box-shadow: -9px 9px 18px rgba(110, 75, 10, 0.11), 9px -9px 18px rgba(110, 75, 10, 0.02), inset 1px 1px 2px rgba(255, 255, 36, 0.3), inset -1px -1px 2px rgba(110, 75, 10, 0.5);
+        border: none;
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+
+    }
+
+    .social {
+        display: flex;
+        gap: 24px;
+
+        a {
+            width: 39px;
+            height: 39px;
+            display: block;
+            border-radius: 50%;
+
+
+        }
+
+        a[value="facebook"] {
+            background-image: url("../../images/icons/facebook\ 1.png");
+        }
+
+        a[value="instagram"] {
+            background-image: url("../../images/icons/instagram\ 1.png");
+        }
+
+        a[value="pinterest"] {
+            background-image: url("../../images/icons/pinterest\ 1.png");
+        }
+
+        a[value="linkedin"] {
+            background-image: url("../../images/icons/linkedin\ 1.png");
+        }
+    }
+
+}
+
+
+.search {
+    width: 100%;
+    height: 38px;
+    display: flex;
+    align-items: center;
+
+    select {
+        width: 20%;
+        height: 100%;
+        @include inputText();
+        border-radius: 6px 0px 0px 6px;
+        border: none;
+        border-right: 1px solid #AEAEAE;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    input{
+        width: 70%;
+        height: 100%;
+        box-sizing: border-box;
+        border: none;
+        @include inputText();
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &_button{
+        background: url("../../images/icons/search.png");
+        background-color: #B6B6B6;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 38px;
+        border-radius: 0px 6px 6px 0px;
+        border: none;
+    }
+}

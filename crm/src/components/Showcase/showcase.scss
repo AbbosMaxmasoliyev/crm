@@ -1,0 +1,141 @@
+.showcase {
+    width: 100%;
+    height: 444px;
+    box-shadow: 0 50px 50px  #F3EDC9;
+    border-bottom: inset 50px  #F3EDC9;
+    overflow: hidden;
+
+    .slick-slider {
+        height: 100%;
+    }
+
+    .item {
+        height: 444px;
+    }
+
+    .case {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 35% 30%;
+        align-items: center;
+
+        h2 {
+            margin: 0;
+        }
+
+        .info {
+            width: 80%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            h2 {
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 57px;
+                line-height: 53px;
+                /* or 93% */
+
+
+                color: #000000;
+
+                span {
+                    color: #0AAEB9;
+                }
+            }
+
+            p {
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                text-transform: capitalize;
+            }
+
+            button {
+                background: #14B1F0;
+                border-radius: 5px;
+                padding: 15px 40px;
+                border: none;
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                /* or 147% */
+
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.2px;
+
+                color: #fff;
+            }
+        }
+
+        .sale {
+            width: 165px;
+            height: 159px;
+
+            background: linear-gradient(90deg, #FDC830 0%, #F37335 100%);
+            border-radius: 83px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 47px;
+            line-height: 58px;
+            text-align: center;
+
+            color: #FFFFFF;
+            justify-self: end;
+            margin-top: -190px;
+        }
+
+        .showback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: -1;
+        }
+
+    }
+
+    .slick-dots{
+        
+        margin: 0 auto;
+        margin-top: -70px;
+        position: relative;
+        gap: 10px;
+        li{
+            margin: 0 15px;
+        }
+        button{
+            width: 36px;
+            height: 0px;
+            border: 5px solid #AA9393;
+            padding: unset;
+            border-radius: 9px;
+            transition: all 0.75s;
+
+            &::before{
+                content: unset;
+            }
+        }
+
+        li.slick-active button{
+            border: 5px solid #034E53;
+        }
+    }
+}

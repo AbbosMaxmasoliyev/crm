@@ -1,0 +1,10 @@
+{
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "files.autoGuessEncoding": true,
+    "files.simpleDialog.enable": true,
+    "html.format.templating": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true
+}
